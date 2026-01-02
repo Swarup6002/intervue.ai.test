@@ -1,0 +1,14 @@
+# --- Dependencies (Block these!) ---
+node_modules/
+venv/
+.venv/
+__pycache__/
+
+# --- Security & Database ---
+.env
+*.db
+*.sqlite3
+
+# --- Build Files ---
+dist/
+.astro/

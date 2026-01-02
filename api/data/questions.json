@@ -1,0 +1,422 @@
+[
+    {
+        "id": 101,
+        "topic": "DSA",
+        "difficulty": "Easy",
+        "question": "What is the difference between an Array and a Linked List?",
+        "expected_answer": "Arrays have fixed size and contiguous memory location, allowing O(1) access. Linked Lists have dynamic size, non-contiguous memory, and require O(n) for access but O(1) for insertion/deletion at known nodes."
+    },
+    {
+        "id": 102,
+        "topic": "DSA",
+        "difficulty": "Medium",
+        "question": "Explain the concept of a Hash Map and how collisions are handled.",
+        "expected_answer": "A Hash Map stores key-value pairs using a hash function. Collisions occur when two keys hash to the same index. They are handled using Chaining (Linked Lists at index) or Open Addressing (Probing)."
+    },
+    {
+        "id": 103,
+        "topic": "DSA",
+        "difficulty": "Hard",
+        "question": "What is the time complexity of QuickSort in the worst case, and how can it be avoided?",
+        "expected_answer": "Worst case is O(n^2) when the pivot is the smallest or largest element (already sorted array). It is avoided by using Randomized QuickSort or choosing the median as the pivot."
+    },
+    {
+        "id": 104,
+        "topic": "OS",
+        "difficulty": "Easy",
+        "question": "What is the difference between a Process and a Thread?",
+        "expected_answer": "A Process is an independent program in execution with its own memory space. A Thread is a lightweight unit within a process that shares the process's memory and resources."
+    },
+    {
+        "id": 105,
+        "topic": "OS",
+        "difficulty": "Medium",
+        "question": "Explain Deadlock and the four necessary conditions for it to occur.",
+        "expected_answer": "Deadlock is a situation where processes are stuck waiting for each other. Conditions: 1. Mutual Exclusion 2. Hold and Wait 3. No Preemption 4. Circular Wait."
+    },
+    {
+        "id": 106,
+        "topic": "OS",
+        "difficulty": "Hard",
+        "question": "What is Virtual Memory and how is Paging implemented?",
+        "expected_answer": "Virtual Memory allows running programs larger than physical RAM by mapping logical addresses to physical ones. Paging divides memory into fixed-size blocks (pages/frames) and uses a Page Table for mapping."
+    },
+    {
+        "id": 107,
+        "topic": "DBMS",
+        "difficulty": "Easy",
+        "question": "What are ACID properties in a database?",
+        "expected_answer": "Atomicity (all or nothing), Consistency (data validity), Isolation (transactions don't interfere), Durability (data is saved permanently)."
+    },
+    {
+        "id": 108,
+        "topic": "DBMS",
+        "difficulty": "Medium",
+        "question": "Difference between Primary Key, Unique Key, and Foreign Key.",
+        "expected_answer": "Primary Key: Unique identifier, cannot be NULL. Unique Key: Unique values, can be NULL (usually once). Foreign Key: Links to a Primary Key in another table to enforce referential integrity."
+    },
+    {
+        "id": 109,
+        "topic": "DBMS",
+        "difficulty": "Medium",
+        "question": "What is Normalization and why is it needed?",
+        "expected_answer": "Normalization is the process of organizing data to reduce redundancy and improve data integrity. Common forms are 1NF, 2NF, 3NF, and BCNF."
+    },
+    {
+        "id": 110,
+        "topic": "System Design",
+        "difficulty": "Hard",
+        "question": "Explain the CAP Theorem.",
+        "expected_answer": "In a distributed system, you can only guarantee two out of three: Consistency (all nodes see same data), Availability (system always responds), and Partition Tolerance (system works despite network failures)."
+    },
+    {
+        "id": 201,
+        "topic": "ECE - Digital",
+        "difficulty": "Easy",
+        "question": "What is the difference between a Latch and a Flip-Flop?",
+        "expected_answer": "Latches are level-triggered (change output when enable is active). Flip-flops are edge-triggered (change output only on clock rising/falling edge)."
+    },
+    {
+        "id": 202,
+        "topic": "ECE - Digital",
+        "difficulty": "Medium",
+        "question": "Explain Setup Time and Hold Time.",
+        "expected_answer": "Setup Time: Time data must be stable *before* the clock edge. Hold Time: Time data must remain stable *after* the clock edge. Violation causes metastability."
+    },
+    {
+        "id": 203,
+        "topic": "ECE - Embedded",
+        "difficulty": "Medium",
+        "question": "What is the difference between a Microprocessor and a Microcontroller?",
+        "expected_answer": "Microprocessor: CPU only, external RAM/ROM/IO (e.g., Intel i7). Microcontroller: CPU + RAM + ROM + IO on a single chip (e.g., Arduino/AVR), used for specific embedded tasks."
+    },
+    {
+        "id": 204,
+        "topic": "ECE - Embedded",
+        "difficulty": "Hard",
+        "question": "What is the use of the 'volatile' keyword in Embedded C?",
+        "expected_answer": "It tells the compiler not to optimize the variable because its value can change unexpectedly at any time (e.g., by an interrupt service routine or hardware register)."
+    },
+    {
+        "id": 205,
+        "topic": "ECE - Communication",
+        "difficulty": "Easy",
+        "question": "What is the difference between AM and FM?",
+        "expected_answer": "AM (Amplitude Modulation) varies the amplitude of the carrier. FM (Frequency Modulation) varies the frequency. FM is more resistant to noise."
+    },
+    {
+        "id": 206,
+        "topic": "ECE - Analog",
+        "difficulty": "Medium",
+        "question": "What is the Sampling Theorem (Nyquist Rate)?",
+        "expected_answer": "To reconstruct a signal perfectly, the sampling frequency (Fs) must be at least twice the maximum frequency (Fmax) of the signal. Fs >= 2 * Fmax."
+    },
+    {
+        "id": 207,
+        "topic": "CN",
+        "difficulty": "Medium",
+        "question": "Explain the difference between TCP and UDP.",
+        "expected_answer": "TCP is connection-oriented, reliable, and ensures order (slow). UDP is connectionless, unreliable, and faster (used for video streaming/gaming)."
+    },
+    {
+        "id": 208,
+        "topic": "Python",
+        "difficulty": "Easy",
+        "question": "What are Python decorators?",
+        "expected_answer": "Decorators are functions that modify the behavior of other functions or methods. They are usually defined with the @symbol before the function definition."
+    },
+    {
+        "id": 209,
+        "topic": "Java",
+        "difficulty": "Medium",
+        "question": "What is the difference between an Interface and an Abstract Class?",
+        "expected_answer": "Interface methods are abstract by default (until Java 8) and support multiple inheritance. Abstract classes can have both abstract and concrete methods and support single inheritance."
+    },
+    {
+        "id": 210,
+        "topic": "HR",
+        "difficulty": "Easy",
+        "question": "Tell me about a time you faced a challenge in a project.",
+        "expected_answer": "Use STAR method: Situation, Task, Action, Result. Focus on problem-solving, teamwork, and the positive outcome."
+    },
+    {
+        "id": "21",
+        "question": "Explain the difference between `useMemo` and `useCallback` in React. Provide a scenario where ignoring one of these hooks could lead to significant performance degradation in a component rendered frequently.",
+        "topic": "React",
+        "difficulty": "Medium",
+        "expected_answer": "`useMemo` memoizes a value (the result of a function call), preventing unnecessary re-calculation on re-renders. `useCallback` memoizes the function definition itself, preventing unnecessary re-creation of the function reference. They are crucial for optimizing rendering when passing props (especially functions) to child components wrapped in `React.memo`."
+    },
+    {
+        "id": "22",
+        "question": "In Python, describe the difference between multithreading and multiprocessing. If you were building a high-throughput API endpoint that handles CPU-bound tasks (e.g., complex data aggregation), which approach would be more suitable and why?",
+        "topic": "Python",
+        "difficulty": "Medium/Hard",
+        "expected_answer": "Multiprocessing uses separate processes (each with its own Python interpreter and memory space), bypassing the GIL and ideal for CPU-bound tasks. Multithreading uses threads within a single process, suitable for IO-bound tasks due to the Global Interpreter Lock (GIL). For CPU-bound aggregation, multiprocessing is superior because it allows true parallel execution across multiple cores."
+    },
+    {
+        "id": "23",
+        "question": "A transactional `inventory` table contains 50 million records. A critical query frequently filters by `warehouse_id` and then sorts the result by `updated_at`. Design the optimal composite index for this scenario and explain the trade-offs regarding insert/update performance versus read speed.",
+        "topic": "SQL",
+        "difficulty": "Medium",
+        "expected_answer": "The optimal index is a composite index on `(warehouse_id, updated_at)`. This follows the standard index creation rule of selectivity first, then sorting. Trade-off: While read query speed is significantly improved (especially range queries/sorting), every INSERT or UPDATE operation on indexed columns now requires the database to update the index B-tree structure, slightly increasing write latency and disk space usage."
+    },
+    {
+        "id": "24",
+        "question": "Outline a high-level architecture for scaling a read-heavy service (like a popular user profile microservice) that handles 10,000 requests per second. Focus specifically on caching strategy (what is cached and where) and the database replication scheme chosen.",
+        "topic": "System Design",
+        "difficulty": "Hard",
+        "expected_answer": "Use a CDN (for static assets/profile images) and an in-memory cache (like Redis/Memcached) for hot user data. Cache hits should be handled by the application layer before hitting the database. Database should employ Read Replicas (e.g., Primary-Replica setup) to distribute read load, with all writes going to the Primary instance. Consistency is eventual, and caching TTLs must be short for critical data."
+    },
+    {
+        "id": "25",
+        "question": "When developing a RESTful API using a Python backend (e.g., Flask or FastAPI), explain the necessity of JSON Web Tokens (JWTs) in a modern stateless architecture. Describe the three components of a JWT and what potential security risks they mitigate.",
+        "topic": "Python",
+        "difficulty": "Medium",
+        "expected_answer": "JWTs are used for secure information transmission as a compact, URL-safe means of representing claims between two parties. The three parts are Header (algorithm), Payload (claims/user data), and Signature (verified by the server secret). They mitigate risks like session hijacking in stateless APIs, as the signed token verifies integrity and authenticity without needing server-side session storage."
+    },
+    {
+        "id": "26",
+        "question": "Describe the difference between Python's `__init__` and `__new__` methods. Provide a scenario where overriding `__new__` would be necessary or advantageous.",
+        "topic": "Python",
+        "difficulty": "Medium",
+        "expected_answer": "`__new__` is responsible for creating and returning the new instance of a class (it's a static method that takes the class as the first argument). `__init__` initializes the newly created instance. Overriding `__new__` is typically needed for implementing metaclasses, singletons, or immutable objects, as it controls the instantiation process before initialization."
+    },
+    {
+        "id": "27",
+        "question": "Explain the concept of 'Window Functions' in SQL. Write a SQL query using a window function (like RANK or ROW_NUMBER) to find the top 3 highest-paid employees in each department, given an `Employees` table with `employee_id`, `department_id`, and `salary`.",
+        "topic": "SQL",
+        "difficulty": "Hard",
+        "expected_answer": "Window functions perform calculations across a set of table rows that are somehow related to the current row, without collapsing the rows into a single output row (unlike aggregates). They use the `OVER()` clause. Query example:\nsql\nWITH RankedEmployees AS (\n    SELECT \n        *, \n        RANK() OVER (PARTITION BY department_id ORDER BY salary DESC) as salary_rank\n    FROM Employees\n)\nSELECT *\nFROM RankedEmployees\nWHERE salary_rank <= 3;\n"
+    },
+    {
+        "id": "28",
+        "question": "How do custom Hooks help in managing state and logic in React applications? Provide a practical example of a custom hook (e.g., `useDebounce`) and explain how it adheres to the rules of Hooks.",
+        "topic": "React",
+        "difficulty": "Medium",
+        "expected_answer": "Custom Hooks allow for reusable, stateful logic to be extracted from components, promoting better code organization and separation of concerns. They must start with `use` (the naming convention) and rely on existing built-in Hooks (like `useState`, `useEffect`). Example: `useDebounce` abstracts the logic for delaying state updates, often using `setTimeout` within `useEffect`, ensuring the logic is encapsulated and reusable across different components."
+    },
+    {
+        "id": "29",
+        "question": "Design a high-level architecture for a real-time chat application (like Slack or Discord) that can handle 10,000 concurrent users. Focus on the core components needed to maintain low latency and connection persistence.",
+        "topic": "System Design",
+        "difficulty": "Hard",
+        "expected_answer": "Key components include: Load Balancer (for distributing connections); WebSocket/Service layer (e.g., using Go/Node.js) for persistent, low-latency communication; a scalable message queue (e.g., Kafka, RabbitMQ) for inter-service communication and eventual consistency; a distributed cache (Redis) for presence and recent messages; and a NoSQL database (e.g., Cassandra, MongoDB) for message storage. Key challenge: managing persistent connections efficiently across multiple instances."
+    },
+    {
+        "id": "30",
+        "question": "Compare and contrast client-side rendering (CSR), server-side rendering (SSR), and static site generation (SSG) in the context of a modern React framework (like Next.js). When would you choose SSR over SSG?",
+        "topic": "React",
+        "difficulty": "Medium",
+        "expected_answer": "CSR renders the application entirely in the browser. SSR pre-renders pages on the server upon request, sending fully formed HTML. SSG pre-renders pages at build time. Choose SSR when the data is frequently changing or user-specific (requires authentication/dynamic content) and needs to be up-to-the-minute accurate, as SSG pages are static and generated only at build time."
+    },
+    {
+        "id": "31",
+        "question": "In React, explain the specific performance goals and mechanisms of `useMemo`, `useCallback`, and `memo`. Give a practical example where using `useCallback` might be mandatory (rather than just an optimization).",
+        "topic": "React",
+        "difficulty": "Medium",
+        "expected_answer": "Expected to explain that all three prevent unnecessary re-renders or recalculations. `memo` (HOC) controls component rendering, `useMemo` caches calculation results, and `useCallback` caches function references. It's mandatory when passing a function down to a child component that uses `memo` or implements `shouldComponentUpdate`, otherwise the child will re-render unnecessarily because the parent passes a new function reference every time."
+    },
+    {
+        "id": "32",
+        "question": "Describe the function of the Global Interpreter Lock (GIL) in standard CPython. How does the GIL affect the choice between Python threading and Python multiprocessing for CPU-bound vs. I/O-bound tasks?",
+        "topic": "Python",
+        "difficulty": "Medium",
+        "expected_answer": "The GIL ensures only one thread executes Python bytecode at a time, preventing true parallel execution on multiple CPU cores within a single process. For CPU-bound tasks, multiprocessing is required to bypass the GIL. For I/O-bound tasks (where the interpreter often releases the GIL while waiting for external resources), threading is usually sufficient and preferred due to lower overhead."
+    },
+    {
+        "id": "33",
+        "question": "What is a database index, and how does it improve query performance? Give an example scenario where a database's query planner might choose to ignore an available index, and explain why this decision is made.",
+        "topic": "SQL",
+        "difficulty": "Medium",
+        "expected_answer": "An index is a data structure (like a B-tree) that allows fast lookup of rows based on column values, reducing full table scans. An index might be ignored if the query selects a very large percentage of the total rows (e.g., > 15-20%), or if the table is very small. In these cases, the overhead of navigating the index outweighs the cost of a sequential table scan."
+    },
+    {
+        "id": "34",
+        "question": "You are designing an API that manages user resources and must implement rate limiting (e.g., 100 requests per minute per user). Describe a suitable high-level system architecture (components and flow) to enforce this. Discuss the trade-offs between using the Token Bucket algorithm versus the Leaky Bucket algorithm.",
+        "topic": "System Design",
+        "difficulty": "Hard",
+        "expected_answer": "Architecture requires a reverse proxy/gateway (like Nginx/API Gateway) and a high-speed data store (like Redis) for counting/storage. The flow involves the gateway intercepting the request, checking the counter/state in Redis, and either allowing or denying the request. Token Bucket allows bursts of traffic up to a capacity, while Leaky Bucket smooths out traffic by processing requests at a constant rate, making it better for stability but worse for burst responsiveness."
+    },
+    {
+        "id": "35",
+        "question": "Contrast Session-based authentication (used in traditional server-side rendering) with Token-based authentication (like JWT). If you choose JWT for a SPA + Python API, explain the typical strategy used to maintain security and handle immediate token revocation (i.e., using Refresh Tokens vs. Access Tokens).",
+        "topic": "Architecture / Security",
+        "difficulty": "Medium",
+        "expected_answer": "Session Auth is stateful (server stores session data); JWT is stateless (token holds necessary info). For security, Access Tokens are short-lived and sent with every request; Refresh Tokens are long-lived, securely stored (HTTP-only cookie), and used only to request new Access Tokens. Immediate revocation requires blacklisting the Refresh Token ID in a server-side store (like Redis) or relying on short Access Token expiration."
+    },
+    {
+        "id": "36",
+        "question": "Explain the differences between `async/await` in Python (using a framework like FastAPI) and traditional multi-threading for handling I/O-bound tasks. When would you prefer asynchronous programming over threading?",
+        "topic": "Python / Backend Architecture",
+        "difficulty": "Medium",
+        "expected_answer": "Asynchronous programming (async/await) is concurrency managed on a single thread via an event loop, ideal for high-throughput I/O-bound tasks (network calls, disk reads) as it avoids context switching overhead. Multi-threading achieves parallelism via the OS, better suited for CPU-bound tasks (though limited by Python's GIL)."
+    },
+    {
+        "id": "37",
+        "question": "Describe a scenario where adding a non-unique index to a frequently queried column in a large SQL table (e.g., PostgreSQL or MySQL) could actually degrade overall database performance, focusing specifically on Data Manipulation Language (DML) operations.",
+        "topic": "SQL / Database Optimization",
+        "difficulty": "Medium",
+        "expected_answer": "Indexes accelerate reads (SELECTs) but slow down writes (INSERT, UPDATE, DELETE). In a write-heavy application (high DML operations), the cost of updating the index structure for every write operation (especially if the table has many indexes) outweighs the benefits of faster reads, leading to overall performance degradation."
+    },
+    {
+        "id": "38",
+        "question": "You have a large application with deeply nested components. Compare and contrast the Context API versus Prop Drilling for managing the global theme (dark/light mode). When would you transition from using `useState` to the `useReducer` hook for managing that theme state?",
+        "topic": "React / State Management",
+        "difficulty": "Medium",
+        "expected_answer": "Context API is preferred over Prop Drilling for widely used data as it avoids cluttering intermediate components with unrelated props. useReducer should be used when state transitions are complex, involve multiple related values, or require centralized logic (e.g., managing a shopping cart vs a simple theme toggle). For theme management, useState is usually sufficient unless theme state involves complex side-effects."
+    },
+    {
+        "id": "39",
+        "question": "Design a basic rate-limiting mechanism for a public REST API that allows 100 requests per minute per authenticated user ID. What specific algorithm (e.g., Token Bucket or Leaky Bucket) and data store (e.g., Redis, database) would you choose, and why?",
+        "topic": "System Design / Caching",
+        "difficulty": "Hard",
+        "expected_answer": "The Token Bucket algorithm is generally preferred because it allows for bursts of traffic while ensuring the average rate is maintained. Redis should be used as the data store due to its speed and atomic increment operations necessary for tracking counts per user ID effectively. Key structure: `rate_limit:{user_id}:{timestamp_minute}`."
+    },
+    {
+        "id": "40",
+        "question": "In a backend application using a Python ORM (like SQLAlchemy or Django ORM), identify two specific situations where executing raw SQL is significantly more efficient or necessary than relying on the ORM-generated query.",
+        "topic": "Python / SQL Integration",
+        "difficulty": "Medium",
+        "expected_answer": "1. Extremely complex reporting queries involving non-standard database functions, deep joins, or recursive Common Table Expressions (CTEs), where the ORM query construction becomes verbose and inefficient. 2. Bulk inserts/updates (especially on MySQL/PostgreSQL) where optimized native database features (like `INSERT ... VALUES (...)` syntax for multiple rows) significantly outperform the ORM's row-by-row insertion logic."
+    },
+    {
+        "id": "41",
+        "question": "Describe the difference between Python's `asyncio` and traditional multi-threading for handling I/O-bound tasks. Provide a small code snippet demonstrating how to define an awaitable function in Python.",
+        "topic": "Python (Asynchronous Programming)",
+        "difficulty": "Medium",
+        "expected_answer": "Asyncio uses a single thread and a non-blocking event loop (cooperative multitasking) making it efficient for I/O-bound tasks without thread overhead. Multi-threading involves OS context switching, suitable for CPU-bound tasks (parallel execution). Snippet must use `async def function_name():` and `await`."
+    },
+    {
+        "id": "42",
+        "question": "Explain the concept of 'lifting state up' in React. When is it necessary, and how does it relate to component communication and props drilling? Provide an alternative modern solution (e.g., using Hooks) to mitigate excessive props drilling.",
+        "topic": "React (State Management)",
+        "difficulty": "Medium",
+        "expected_answer": "Lifting state up means moving shared state from a child component to the nearest common ancestor. Necessary when siblings or distant relatives need to modify or observe the same data. It causes props drilling. Alternative solution is using the Context API (or a state management library like Redux/Zustand) with `useContext` hook to provide state deeply."
+    },
+    {
+        "id": "43",
+        "question": "Given two tables, `Orders (order_id, user_id, order_date)` and `Users (user_id, registration_date)`, write a single SQL query that returns the `user_id` and the total number of orders placed by that user in the year 2023. Only include users who placed more than 5 orders in that year.",
+        "topic": "SQL (Advanced Filtering/Grouping)",
+        "difficulty": "Medium",
+        "expected_answer": "SELECT T1.user_id, COUNT(T2.order_id) AS total_orders FROM Users T1 JOIN Orders T2 ON T1.user_id = T2.user_id WHERE STRFTIME('%Y', T2.order_date) = '2023' GROUP BY T1.user_id HAVING COUNT(T2.order_id) > 5;"
+    },
+    {
+        "id": "44",
+        "question": "Design a high-level API endpoint for handling file uploads (e.g., profile pictures) for a million users. Discuss the trade-offs between storing files directly in the database versus using an external object storage service (like AWS S3). If using S3, describe the typical secure flow for a React frontend to upload the file.",
+        "topic": "System Design (Data Storage & APIs)",
+        "difficulty": "Hard",
+        "expected_answer": "Direct DB storage (BLOBs) is generally discouraged due to performance issues, increased DB backup times, and scalability limits. External object storage (S3/Azure Blob) is better for scalability, durability, and cost. Secure S3 flow: Frontend requests a secure, pre-signed S3 URL from the Backend API. Backend authenticates user and generates URL. Frontend uploads file directly to S3 using the pre-signed URL. S3 confirms the upload."
+    },
+    {
+        "id": "45",
+        "question": "You are building a real-time dashboard. Describe how you would implement a persistent, bidirectional communication channel between a Django/Flask backend (using Python) and a React frontend, specifically focusing on the technologies required on both sides and the typical payload structure.",
+        "topic": "Python/React (Real-time Communication)",
+        "difficulty": "Medium",
+        "expected_answer": "Use WebSockets. Backend: Implement using libraries like `Django Channels` or `Flask-SocketIO`. Frontend: Use native browser WebSocket API or a dedicated library like `socket.io-client`. Payload structure is typically JSON, containing an 'event_type' (or 'action') key and a 'data' payload to route and process the message appropriately."
+    },
+    {
+        "id": "46",
+        "question": "Describe the difference between an ORM (Object-Relational Mapper) like SQLAlchemy and raw SQL query execution in a Python/Django application. When would you explicitly choose raw SQL over an ORM?",
+        "topic": "Python / SQL",
+        "difficulty": "Medium",
+        "expected_answer": "ORM maps database rows to Python objects, improving safety and readability but adding abstraction overhead. Raw SQL is preferred for complex queries (e.g., recursive CTEs), significant performance tuning, or when utilizing highly specific database features not supported by the ORM layer."
+    },
+    {
+        "id": "47",
+        "question": "In React, explain the role of custom hooks and the 'useReducer' hook. Provide a scenario where 'useReducer' is definitively better than using multiple 'useState' calls.",
+        "topic": "React",
+        "difficulty": "Medium",
+        "expected_answer": "Custom hooks abstract stateful logic for reuse. useReducer is for complex state logic that involves multiple related sub-values or when the next state depends on the previous one. It's better than useState when state updates involve complex transitions or when passing down dispatch function (like context) simplifies prop drilling."
+    },
+    {
+        "id": "48",
+        "question": "Design a schema for a simple URL shortener service (like Bitly). Specify the necessary tables, columns, data types, and the primary/foreign keys. How would you ensure the short code generated is unique and non-sequential?",
+        "topic": "SQL / System Design",
+        "difficulty": "Hard",
+        "expected_answer": "Table: `urls` (id: INT PK, long_url: TEXT/VARCHAR, short_code: VARCHAR UNIQUE INDEX, created_at: TIMESTAMP). Short codes are generated using hashing algorithms (like MurmurHash) or base62 encoding of a unique identifier, ensuring non-sequentiality. Uniqueness is enforced via a unique index constraint on `short_code`."
+    },
+    {
+        "id": "49",
+        "question": "A Python backend endpoint is experiencing slow response times (latency is high). Outline a structured approach using tools and methodologies to diagnose and resolve this performance issue, assuming the bottleneck could be database, I/O, or CPU.",
+        "topic": "Python / System Design",
+        "difficulty": "Hard",
+        "expected_answer": "1. Monitoring (e.g., Prometheus/Grafana) to identify which services/endpoints are slow. 2. Profiling (e.g., Python's `cProfile` or flame graphs) to pinpoint slow functions (I/O wait vs. CPU processing). 3. Database query analysis (e.g., `EXPLAIN ANALYZE`) to identify inefficient queries/missing indexes. 4. Caching (Redis/Memcached) for frequently accessed data to reduce DB load. 5. Gunicorn/ASGI worker tuning."
+    },
+    {
+        "id": "50",
+        "question": "Explain React's concept of the Virtual DOM (VDOM). How does the VDOM enhance performance compared to direct manipulation of the browser's Document Object Model (DOM), specifically during high-frequency state updates?",
+        "topic": "React",
+        "difficulty": "Medium",
+        "expected_answer": "The VDOM is an in-memory representation of the actual DOM. When state changes, React creates a new VDOM tree and diffs it against the old one. This 'diffing' process calculates the minimal set of changes (patch) required. React then batches these updates and applies them to the real DOM only once, minimizing expensive repaint and reflow operations."
+    },
+    {
+        "id": "51",
+        "question": "Describe the Global Interpreter Lock (GIL) in CPython. How does the GIL affect concurrency, and what are the standard Python strategies (beyond using C extensions) for achieving true parallelism for CPU-bound tasks?",
+        "topic": "Python Concurrency",
+        "difficulty": "Medium",
+        "expected_answer": "The GIL ensures only one thread executes Python bytecode at a time, limiting concurrency for CPU-bound tasks. It simplifies memory management but prevents multi-core parallelism via threading. Strategies for parallelism include using the 'multiprocessing' module (which spawns separate processes, each with its own interpreter and GIL) or utilizing asynchronous programming ('asyncio') for I/O-bound tasks."
+    },
+    {
+        "id": "52",
+        "question": "Explain the difference between `JOIN` and `UNION` in SQL. Provide a scenario where you would use a `LEFT JOIN` over an `INNER JOIN` and why. Also, define ACID properties and their importance in transactional databases.",
+        "topic": "SQL Database Fundamentals",
+        "difficulty": "Medium",
+        "expected_answer": "JOIN combines columns from different tables based on a related column, while UNION combines rows from different result sets (must have the same columns/types). A LEFT JOIN is used when you need all records from the left table, even if there are no matching records in the right table (e.g., listing all users even if they haven't placed an order). ACID (Atomicity, Consistency, Isolation, Durability) ensures reliable processing of database transactions, maintaining data integrity."
+    },
+    {
+        "id": "53",
+        "question": "In React, explain the differences between client-side rendering (CSR), server-side rendering (SSR), and static site generation (SSG). When would you recommend Next.js's Incremental Static Regeneration (ISR) over traditional SSG?",
+        "topic": "React and Rendering Strategies",
+        "difficulty": "Hard",
+        "expected_answer": "CSR renders the application fully in the browser (poor SEO/initial load). SSR renders the initial HTML on the server (better performance/SEO). SSG builds pages entirely at build time (fastest). ISR allows static pages to be rebuilt automatically after deployment (revalidation) when data changes or a timeout occurs, making it ideal for pages that are mostly static but require periodic updates (e.g., e-commerce product listings) without requiring a full redeploy."
+    },
+    {
+        "id": "54",
+        "question": "Design a high-level architecture for a URL shortening service (like Bitly). Detail the components required (e.g., storage, API), the database index strategy for fast lookups, and how you would handle potential hash collisions.",
+        "topic": "System Design",
+        "difficulty": "Hard",
+        "expected_answer": "Components include a front-end API (e.g., Flask/Django), a unique ID generation service (e.g., base62 conversion of incrementing IDs or random hashing), and a database (e.g., NoSQL like Redis/Cassandra for fast lookups, or PostgreSQL). The DB index should be on the shortened hash. Hash collision handling requires appending a random salt to the original URL or using a conflict resolution loop (retry with a new hash) if a random generation strategy is used."
+    },
+    {
+        "id": "55",
+        "question": "Contrast `useState` and `useReducer` in React functional components. Provide a concrete scenario where `useReducer` would be demonstrably better than multiple calls to `useState` for state management.",
+        "topic": "React Hooks",
+        "difficulty": "Medium",
+        "expected_answer": "`useState` is for simple state management (single value). `useReducer` is for complex state logic that involves multiple sub-values or when the next state depends on the previous one, centralizing state transitions via a reducer function. `useReducer` is better when state updates are complex or when multiple updates need to be batched/coordinated (e.g., managing a shopping cart where actions like ADD_ITEM, REMOVE_ITEM, and UPDATE_QUANTITY all affect a single cart object). It also helps avoid callback hell when passing dispatch functions down deeply."
+    },
+    {
+        "id": "56",
+        "question": "Describe the Global Interpreter Lock (GIL) in CPython. Why was it introduced, and what are its primary effects on multi-threaded Python applications, particularly those that are CPU-bound versus IO-bound?",
+        "topic": "Python Fundamentals",
+        "difficulty": "Medium",
+        "expected_answer": "The GIL is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes simultaneously. It simplifies memory management and thread-safe C extensions. It severely limits parallelism for CPU-bound tasks, forcing them to be mostly sequential, but has minimal impact on IO-bound tasks (which release the GIL during blocking operations)."
+    },
+    {
+        "id": "57",
+        "question": "Explain the concept of 'memoization' in React. When would you use `useMemo` versus `useCallback`, and what potential pitfalls should a developer be aware of when relying heavily on these hooks?",
+        "topic": "React Hooks & Performance",
+        "difficulty": "Medium",
+        "expected_answer": "Memoization is caching the result of a function call. `useMemo` caches the result of an expensive calculation (value), while `useCallback` caches the function instance itself. Pitfalls include premature optimization, potential memory overuse if dependencies are incorrect, and the overhead of the memoization check sometimes outweighing the calculation savings."
+    },
+    {
+        "id": "58",
+        "question": "Consider a database with two tables: `Users (user_id PK, name)` and `Orders (order_id PK, user_id FK, amount)`. Write a single SQL query to find the names of all users who have placed more than 5 orders AND whose total order amount exceeds $1000.",
+        "topic": "SQL Aggregation & Filtering",
+        "difficulty": "Hard",
+        "expected_answer": "SELECT u.name FROM Users u JOIN Orders o ON u.user_id = o.user_id GROUP BY u.user_id, u.name HAVING COUNT(o.order_id) > 5 AND SUM(o.amount) > 1000;"
+    },
+    {
+        "id": "59",
+        "question": "You are designing a high-traffic e-commerce product catalog API (read-heavy, global audience). Outline the architecture you would propose, focusing on how you would handle caching strategies, content delivery, and ensuring data consistency between the database and the cache layer.",
+        "topic": "System Design & Architecture",
+        "difficulty": "Hard",
+        "expected_answer": "Use a CDN (e.g., Cloudflare/Akamai) for static assets and edge caching. Implement API gateway/load balancing. Use a distributed cache (e.g., Redis Cluster or Memcached) near the application servers. Strategy likely Write-Through (for low-latency writes, high consistency) or Cache-Aside (most common). Use Time-To-Live (TTL) policies and potential invalidated cache stamps or event-driven invalidation for consistency."
+    },
+    {
+        "id": "60",
+        "question": "Explain the vulnerability of Cross-Site Scripting (XSS) and describe how a modern Full Stack framework (e.g., Python/Django REST Framework on the backend, React on the frontend) mitigates common XSS vectors by default. What must the developer still explicitly handle?",
+        "topic": "Security & Frameworks",
+        "difficulty": "Medium",
+        "expected_answer": "XSS allows attackers to inject malicious scripts into trusted websites. React automatically escapes interpolated variables (e.g., `{} ` syntax) by converting special characters to HTML entities. Django template rendering does the same. Developers must still handle XSS explicitly when using dangerouslySetInnerHTML (React), ensuring inputs are validated/sanitized, or dealing with user-supplied dynamic CSS/URL redirection inputs."
+    }
+]

@@ -1,0 +1,46 @@
+@import './fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode theme */
+:root {
+  --background: #0f0c29;
+  --primary: #302b63;
+  --secondary: #24243e;
+  --accent: #00FFFF;
+  --foreground: #FFFFFF;
+  --destructive: #FF4500;
+}
+
+/* Dark mode (default) */
+html.dark {
+  --background: #0f0c29;
+  --primary: #302b63;
+  --secondary: #24243e;
+  --accent: #00FFFF;
+  --foreground: #FFFFFF;
+  --destructive: #FF4500;
+}
+
+/* Light mode */
+html:not(.dark) {
+  --background: #F5F5F7;
+  --primary: #E8E8F0;
+  --secondary: #FFFFFF;
+  --accent: #00BFFF;
+  --foreground: #1A1A1A;
+  --destructive: #FF4500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
